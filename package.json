@@ -1,0 +1,24 @@
+{
+  "name": "webpack-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Class.js",
+  "dependencies": {
+    "babel-core": "^4.3.0",
+    "babel-loader": "^4.0.0",
+    "raw-loader": "^0.5.1",
+    "traceur-loader": "^0.6.3",
+    "webpack": "^1.5.3"
+  },
+  "devDependencies": {
+    "babel-loader": "^4.0.0",
+    "raw-loader": "^0.5.1",
+    "traceur-loader": "^0.6.3",
+    "webpack": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denis Kolesnikov",
+  "license": "MIT"
+}
