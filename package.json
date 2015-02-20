@@ -6,12 +6,14 @@
   "dependencies": {
     "babel-core": "^4.3.0",
     "babel-loader": "^4.0.0",
+    "jade": "^1.9.2",
     "raw-loader": "^0.5.1",
     "traceur-loader": "^0.6.3",
     "webpack": "^1.5.3"
   },
   "devDependencies": {
     "babel-loader": "^4.0.0",
+    "jade-html-loader": "0.0.2",
     "raw-loader": "^0.5.1",
     "traceur-loader": "^0.6.3",
     "webpack": "^1.5.3"
