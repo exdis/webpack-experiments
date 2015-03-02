@@ -6,13 +6,13 @@ class TestClass extends SuperClass {
         this.jadeTemplate = require('raw!jade-html!./templates/template.jade');
     }
 
-		getTemplate() {
-			  return this.template;
-		}
+    getTemplate() {
+        return this.template;
+    }
 
-		setTemplate(template) {
-			  this.template = template;
-		}
+    setTemplate(template) {
+        this.template = template;
+    }
 }
 
 export default TestClass;
