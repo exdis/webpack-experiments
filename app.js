@@ -4,13 +4,13 @@ var webpackDevMiddleware = require("webpack-dev-middleware");
 var webpack = require("webpack");
 
 app.get('/', function (req, res) {
-    res.send('<script src="bundle.js"></script>');
+    res.send('<script src="static/bundle.js"></script>');
 });
 
 var compiler = webpack({
     entry: './Class.js',
     output: {
-        path: __dirname + '/static',
+        path: '/',
         filename: "bundle.js"
     },
     module: {
@@ -22,9 +22,12 @@ var compiler = webpack({
     }
 });
 
-app.use(webpackDevMiddleware(compiler));
-
-app.use(express.static(__dirname + '/static'));
+app.use(webpackDevMiddleware(compiler, {
+    publicPath: '/static/',
+    stats: {
+        colors: true
+    }
+}));
 
 var server = app.listen(3000, function () {
 
